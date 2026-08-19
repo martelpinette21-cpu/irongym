@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IronGym — Forge ta force</title>
-<meta name="description" content="IronGym — Aucune excuse. Juste du fer. Musculation, conditionnement et coaching. Rejoins-nous aujourd'hui.">
+<title>IronGym — Forge Your Strength</title>
+<meta name="description" content="IronGym — No excuses. Just iron. Strength training, conditioning, and coaching. Join today.">
 <style>
   :root{
     --bg:#0d0d0f;
@@ -13,8 +13,8 @@
     --line:#2a2a30;
     --text:#e8e8ea;
     --muted:#9a9aa2;
-    --accent:#e8ff2e;      /* jaune volt */
-    --accent2:#ff4d2e;     /* orange fer chaud */
+    --accent:#e8ff2e;      /* volt yellow */
+    --accent2:#ff4d2e;     /* hot iron orange */
     --radius:14px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -61,7 +61,7 @@
   .nav-cta{padding:10px 22px;font-size:.78rem}
   .burger{display:none;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer}
 
-  /* ===== HÉROS ===== */
+  /* ===== HERO ===== */
   .hero{
     min-height:100vh;display:flex;align-items:center;position:relative;
     background:
@@ -85,7 +85,7 @@
   .stat b{display:block;font-size:2rem;font-weight:900;color:var(--accent)}
   .stat small{color:var(--muted);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem}
 
-  /* ===== DÉFILANT ===== */
+  /* ===== MARQUEE ===== */
   .marquee{
     background:var(--accent);color:#0d0d0f;overflow:hidden;white-space:nowrap;
     padding:14px 0;font-weight:900;text-transform:uppercase;letter-spacing:.15em;font-size:.9rem;
@@ -94,7 +94,7 @@
   .marquee-track span{margin:0 28px}
   @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
-  /* ===== PROGRAMMES ===== */
+  /* ===== PROGRAMS ===== */
   .programs{background:var(--bg2)}
   .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
   .card{
@@ -106,7 +106,7 @@
   .card h3{font-size:1.15rem;margin-bottom:10px}
   .card p{color:var(--muted);font-size:.95rem}
 
-  /* ===== TARIFS ===== */
+  /* ===== PRICING ===== */
   .price-card{text-align:center;position:relative}
   .price-card.featured{border-color:var(--accent);background:linear-gradient(180deg,rgba(232,255,46,.06),var(--card))}
   .badge{
@@ -121,14 +121,14 @@
   .price-card li::before{content:"✓ ";color:var(--accent);font-weight:700}
   .plan-name{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700}
 
-  /* ===== HORAIRE ===== */
+  /* ===== SCHEDULE ===== */
   .schedule-table{width:100%;border-collapse:collapse;background:var(--card);border-radius:var(--radius);overflow:hidden}
   .schedule-table th,.schedule-table td{padding:16px 18px;text-align:left;font-size:.9rem;border-bottom:1px solid var(--line)}
   .schedule-table th{background:#111114;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;color:var(--muted)}
   .schedule-table td:first-child{font-weight:700;color:var(--accent)}
   .schedule-table tr:last-child td{border-bottom:none}
 
-  /* ===== BANNIÈRE CTA ===== */
+  /* ===== CTA BANNER ===== */
   .cta-banner{
     background:linear-gradient(120deg,rgba(255,77,46,.12),rgba(232,255,46,.08)),var(--bg2);
     border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;
@@ -136,7 +136,7 @@
   .cta-banner h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:18px}
   .cta-banner p{color:var(--muted);margin-bottom:32px}
 
-  /* ===== CONTACT / PIED DE PAGE ===== */
+  /* ===== CONTACT / FOOTER ===== */
   footer{background:#0a0a0c;padding:64px 0 32px;border-top:1px solid var(--line)}
   .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-bottom:48px}
   .footer-grid h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);margin-bottom:16px}
@@ -144,7 +144,7 @@
   .footer-grid a:hover{color:var(--accent)}
   .copyright{text-align:center;color:#55555c;font-size:.8rem;padding-top:28px;border-top:1px solid var(--line)}
 
-  /* ===== ANIMATION D'APPARITION ===== */
+  /* ===== REVEAL ANIMATION ===== */
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
   .reveal.visible{opacity:1;transform:none}
 
@@ -170,150 +170,150 @@
     <nav>
       <a href="#top" class="logo">IRON<span>GYM</span></a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#programmes">Programmes</a></li>
-        <li><a href="#tarifs">Abonnement</a></li>
-        <li><a href="#horaire">Horaire</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#pricing">Membership</a></li>
+        <li><a href="#schedule">Schedule</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="en.html" class="lang-switch">EN</a></li>
+        <li><a href="index.html" class="lang-switch">FR</a></li>
       </ul>
-      <a href="#tarifs" class="btn btn-primary nav-cta">Rejoindre</a>
+      <a href="#pricing" class="btn btn-primary nav-cta">Join Now</a>
       <button class="burger" id="burger" aria-label="Menu">☰</button>
     </nav>
   </div>
 </header>
 
-<!-- ============ HÉROS ============ -->
+<!-- ============ HERO ============ -->
 <section class="hero" id="top">
   <div class="wrap hero-inner">
-    <span class="tag">Depuis 2024 — Aucune excuse. Juste du fer.</span>
+    <span class="tag">Est. 2024 — No Excuses. Just Iron.</span>
     <h1>
       Forge<br>
-      <span class="stroke">ta</span><br>
-      <span class="accent">Force</span>
+      <span class="stroke">Your</span><br>
+      <span class="accent">Strength</span>
     </h1>
-    <p>Du fer à l'ancienne, un coaching moderne. Force athlétique, culturisme et conditionnement sous un même toit. Première semaine gratuite — viens t'entraîner avec nous.</p>
+    <p>Old-school iron, modern coaching. Powerlifting, bodybuilding, and conditioning under one roof. First week free — come lift with us.</p>
     <div class="hero-btns">
-      <a href="#tarifs" class="btn btn-primary">Semaine gratuite</a>
-      <a href="#programmes" class="btn btn-ghost">Voir les programmes</a>
+      <a href="#pricing" class="btn btn-primary">Start Free Week</a>
+      <a href="#programs" class="btn btn-ghost">View Programs</a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><b>2 400+</b><small>Membres</small></div>
-      <div class="stat"><b>15</b><small>Coachs</small></div>
-      <div class="stat"><b>24/7</b><small>Accès</small></div>
-      <div class="stat"><b>12 000</b><small>Pi² de fer</small></div>
+      <div class="stat"><b>2,400+</b><small>Members</small></div>
+      <div class="stat"><b>15</b><small>Coaches</small></div>
+      <div class="stat"><b>24/7</b><small>Access</small></div>
+      <div class="stat"><b>12,000</b><small>Sq. Ft. of Iron</small></div>
     </div>
   </div>
 </section>
 
-<!-- ============ DÉFILANT ============ -->
+<!-- ============ MARQUEE ============ -->
 <div class="marquee">
   <div class="marquee-track">
-    <span>Squat</span>•<span>Développé couché</span>•<span>Soulevé de terre</span>•<span>Presse</span>•<span>Tirage</span>•<span>Transport</span>•<span>Sprint</span>•<span>Répète</span>•
-    <span>Squat</span>•<span>Développé couché</span>•<span>Soulevé de terre</span>•<span>Presse</span>•<span>Tirage</span>•<span>Transport</span>•<span>Sprint</span>•<span>Répète</span>•
+    <span>Squat</span>•<span>Bench</span>•<span>Deadlift</span>•<span>Press</span>•<span>Pull</span>•<span>Carry</span>•<span>Sprint</span>•<span>Repeat</span>•
+    <span>Squat</span>•<span>Bench</span>•<span>Deadlift</span>•<span>Press</span>•<span>Pull</span>•<span>Carry</span>•<span>Sprint</span>•<span>Repeat</span>•
   </div>
 </div>
 
-<!-- ============ PROGRAMMES ============ -->
-<section class="programs" id="programmes">
+<!-- ============ PROGRAMS ============ -->
+<section class="programs" id="programs">
   <div class="wrap">
-    <span class="tag reveal">Ce qu'on fait</span>
-    <h2 class="section-title reveal">Des programmes conçus pour progresser</h2>
-    <p class="section-sub reveal">Que tu vises un record personnel ou ta première traction, il y a une place pour toi ici.</p>
+    <span class="tag reveal">What We Do</span>
+    <h2 class="section-title reveal">Programs Built for Progress</h2>
+    <p class="section-sub reveal">Whether you're chasing a PR or your first pull-up, there's a lane for you here.</p>
     <div class="grid-3">
       <div class="card reveal">
         <div class="icon">🏋️</div>
-        <h3>Force athlétique</h3>
-        <p>Plaques calibrées, bancs de compétition et plateformes de soulevé de terre. Coaching au squat, développé couché et soulevé de terre, du débutant au niveau national.</p>
+        <h3>Powerlifting</h3>
+        <p>Calibrated plates, comp benches, and deadlift platforms. Coaching for squat, bench, and deadlift from beginner to nationals.</p>
       </div>
       <div class="card reveal">
         <div class="icon">💪</div>
-        <h3>Hypertrophie</h3>
-        <p>Haltères complets jusqu'à 150 lb, stations à câbles et machines pour tous les angles. Développe ta masse musculaire avec une programmation structurée.</p>
+        <h3>Hypertrophy</h3>
+        <p>Full dumbbell run to 150 lbs, cable stations, and machines for every angle. Build muscle with structured bodybuilding programming.</p>
       </div>
       <div class="card reveal">
         <div class="icon">🔥</div>
-        <h3>Conditionnement</h3>
-        <p>Traîneaux, cordes, vélos d'assaut et piste de gazon. Des circuits qui brûlent le gras sans sacrifier tes gains.</p>
+        <h3>Conditioning</h3>
+        <p>Sleds, ropes, assault bikes, and a turf lane. Engine-building circuits that torch fat without losing your gains.</p>
       </div>
       <div class="card reveal">
         <div class="icon">🥊</div>
-        <h3>Préparation combat</h3>
-        <p>Sacs lourds, circuits de force et travail de mobilité conçus pour les athlètes de combat. Un conditionnement prêt pour le ring.</p>
+        <h3>Fight Prep</h3>
+        <p>Heavy bags, strength circuits, and mobility work built for combat athletes. Get fight-ready conditioning.</p>
       </div>
       <div class="card reveal">
         <div class="icon">🧭</div>
-        <h3>Coaching privé</h3>
-        <p>Programmation personnalisée, conseils en nutrition et travail technique. Ton coach, ton plan, tes résultats.</p>
+        <h3>1-on-1 Coaching</h3>
+        <p>Personalized programming, nutrition guidance, and technique work. Your coach, your plan, your results.</p>
       </div>
       <div class="card reveal">
         <div class="icon">🌙</div>
-        <h3>Gym ouvert 24/7</h3>
-        <p>Accès par carte magnétique jour et nuit. Entraîne-toi à 5 h du matin ou à minuit — le fer ne dort jamais, toi non plus.</p>
+        <h3>24/7 Open Gym</h3>
+        <p>Keycard access around the clock. Train at 5 AM or midnight — the iron doesn't sleep, and neither do you.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ TARIFS ============ -->
-<section id="tarifs">
+<!-- ============ PRICING ============ -->
+<section id="pricing">
   <div class="wrap">
-    <span class="tag reveal">Abonnement</span>
-    <h2 class="section-title reveal">Des prix simples et honnêtes</h2>
-    <p class="section-sub reveal">Pas de frais cachés. Pas de contrat qui t'emprisonne. Annule quand tu veux.</p>
+    <span class="tag reveal">Membership</span>
+    <h2 class="section-title reveal">Simple, Honest Pricing</h2>
+    <p class="section-sub reveal">No hidden fees. No contracts locking you in. Cancel anytime.</p>
     <div class="grid-3">
       <div class="card price-card reveal">
-        <div class="plan-name">Passe journalière</div>
-        <div class="price">15 $<small>/jour</small></div>
+        <div class="plan-name">Day Pass</div>
+        <div class="price">$15<small>/day</small></div>
         <ul>
-          <li>Accès complet pour la journée</li>
-          <li>Tout l'équipement inclus</li>
-          <li>Vestiaires et douches</li>
+          <li>Full gym access for the day</li>
+          <li>All equipment included</li>
+          <li>Locker room & showers</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost">Drop-in</a>
+        <a href="#contact" class="btn btn-ghost">Drop In</a>
       </div>
       <div class="card price-card featured reveal">
-        <div class="badge">Le plus populaire</div>
-        <div class="plan-name">Mensuel</div>
-        <div class="price">49 $<small>/mois</small></div>
+        <div class="badge">Most Popular</div>
+        <div class="plan-name">Monthly</div>
+        <div class="price">$49<small>/mo</small></div>
         <ul>
-          <li>Accès illimité 24/7</li>
-          <li>Tous les cours de groupe inclus</li>
-          <li>Modèle de programme gratuit</li>
-          <li>Une passe invité par mois</li>
+          <li>24/7 unlimited access</li>
+          <li>All group classes included</li>
+          <li>Free program template</li>
+          <li>Guest pass every month</li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Rejoindre</a>
+        <a href="#contact" class="btn btn-primary">Join Now</a>
       </div>
       <div class="card price-card reveal">
-        <div class="plan-name">Annuel</div>
-        <div class="price">470 $<small>/an</small></div>
+        <div class="plan-name">Annual</div>
+        <div class="price">$470<small>/yr</small></div>
         <ul>
-          <li>Tout le forfait Mensuel</li>
-          <li>2 mois gratuits</li>
-          <li>1 séance de coaching gratuite</li>
-          <li>T-shirt IronGym inclus</li>
+          <li>Everything in Monthly</li>
+          <li>2 months free</li>
+          <li>1 free coaching session</li>
+          <li>IronGym tee included</li>
         </ul>
-        <a href="#contact" class="btn btn-ghost">S'engager et économiser</a>
+        <a href="#contact" class="btn btn-ghost">Commit & Save</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ HORAIRE ============ -->
-<section class="programs" id="horaire">
+<!-- ============ SCHEDULE ============ -->
+<section class="programs" id="schedule">
   <div class="wrap">
-    <span class="tag reveal">Cours hebdomadaires</span>
-    <h2 class="section-title reveal">Horaire des cours</h2>
-    <p class="section-sub reveal">Le gym est ouvert 24/7. Les cours avec coach suivent l'horaire ci-dessous.</p>
+    <span class="tag reveal">Weekly Classes</span>
+    <h2 class="section-title reveal">Class Schedule</h2>
+    <p class="section-sub reveal">Open gym is 24/7. Coached classes run on the schedule below.</p>
     <div style="overflow-x:auto" class="reveal">
       <table class="schedule-table">
         <thead>
-          <tr><th>Heure</th><th>Lun</th><th>Mer</th><th>Ven</th><th>Sam</th></tr>
+          <tr><th>Time</th><th>Mon</th><th>Wed</th><th>Fri</th><th>Sat</th></tr>
         </thead>
         <tbody>
-          <tr><td>6 h 00</td><td>Conditionnement</td><td>Force athlétique</td><td>Conditionnement</td><td>Séance libre</td></tr>
-          <tr><td>12 h 00</td><td>Express du midi</td><td>Express du midi</td><td>Express du midi</td><td>—</td></tr>
-          <tr><td>17 h 30</td><td>Force athlétique</td><td>Hypertrophie</td><td>Force athlétique</td><td>Samedi strongman</td></tr>
-          <tr><td>19 h 00</td><td>Préparation combat</td><td>Conditionnement</td><td>Préparation combat</td><td>—</td></tr>
+          <tr><td>6:00 AM</td><td>Conditioning</td><td>Powerlifting</td><td>Conditioning</td><td>Open Mat</td></tr>
+          <tr><td>12:00 PM</td><td>Lunch Express Lift</td><td>Lunch Express Lift</td><td>Lunch Express Lift</td><td>—</td></tr>
+          <tr><td>5:30 PM</td><td>Powerlifting</td><td>Hypertrophy</td><td>Powerlifting</td><td>Strongman Sat.</td></tr>
+          <tr><td>7:00 PM</td><td>Fight Prep</td><td>Conditioning</td><td>Fight Prep</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -323,23 +323,23 @@
 <!-- ============ CTA ============ -->
 <section class="cta-banner">
   <div class="wrap">
-    <h2 class="reveal">Ta première semaine est gratuite</h2>
-    <p class="reveal">Viens t'entraîner, rencontre l'équipe. Si ce n'est pas pour toi, tu repars — sans frais, sans pression.</p>
-    <a href="#contact" class="btn btn-primary reveal">Réclame ta semaine gratuite</a>
+    <h2 class="reveal">Your First Week Is Free</h2>
+    <p class="reveal">Come in, lift, meet the crew. If it's not for you, walk away — no charge, no pressure.</p>
+    <a href="#contact" class="btn btn-primary reveal">Claim Free Week</a>
   </div>
 </section>
 
-<!-- ============ PIED DE PAGE / CONTACT ============ -->
+<!-- ============ FOOTER / CONTACT ============ -->
 <footer id="contact">
   <div class="wrap">
     <div class="footer-grid">
       <div>
         <h4>IronGym</h4>
-        <p>Aucune excuse. Juste du fer. Un gym axé sur la force, conçu par des passionnés, pour des passionnés.</p>
+        <p>No excuses. Just iron. A strength-focused gym built by lifters, for lifters.</p>
       </div>
       <div>
-        <h4>Nous trouver</h4>
-        <p>123, rue Forge</p>
+        <h4>Visit</h4>
+        <p>123 Forge Street</p>
         <p>Sept-Îles, QC G4R 1A1</p>
       </div>
       <div>
@@ -348,18 +348,18 @@
         <a href="mailto:train@irongym.ca">train@irongym.ca</a>
       </div>
       <div>
-        <h4>Heures d'ouverture</h4>
-        <p>Membres : 24/7</p>
-        <p>Personnel : lun–ven, 8 h à 20 h</p>
-        <p>Sam–dim, 9 h à 17 h</p>
+        <h4>Hours</h4>
+        <p>Members: 24/7</p>
+        <p>Staffed: Mon–Fri 8 AM – 8 PM</p>
+        <p>Sat–Sun 9 AM – 5 PM</p>
       </div>
     </div>
-    <div class="copyright">© 2026 IronGym. Tous droits réservés. Lève lourd, vis bien.</div>
+    <div class="copyright">© 2026 IronGym. All rights reserved. Lift heavy, live well.</div>
   </div>
 </footer>
 
 <script>
-  // Menu mobile
+  // Mobile menu toggle
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => navLinks.classList.toggle('open'));
@@ -367,7 +367,7 @@
     a.addEventListener('click', () => navLinks.classList.remove('open'))
   );
 
-  // Animation d'apparition au défilement
+  // Scroll reveal animation
   const observer = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.12 });
